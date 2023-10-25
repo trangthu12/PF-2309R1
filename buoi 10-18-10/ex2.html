@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Coffee Shop Menu</h1>
+    <ul id="drink-3">
+        <li>Coffee</li>
+        <li>Capuchino</li>
+        <li id="drink">Tropical Fruit Tea</li>
+        <li id="drink-2">Milk Tea</li>
+        <li>Peach Tea</li>
+    </ul>
+    <br>
+    <button id="btn-update">Update Menu</button>
+    <script>
+        let btnUpdate = document.getElementById("btn-update");
+        //thêm thao tác xử lý khi click button
+        btnUpdate.addEventListener('click', () =>{
+            let newDrink = document.getElementById("drink");
+            let newTitle = document.getElementById("title");
+            let newDrink2 = document.getElementById("drink-2");
+            let newItem = document.createElement("li");
+            newItem.innerHTML = "Milk";
+            let newDrink3 = document.getElementById("drink-3");
+           
+            //3.add element
+            newDrink3.appendChild(newItem);
+
+
+
+            drink.innerText = "Fruit Yogurt";
+            //1. change title color
+            newTitle.style.color = "red";
+            //2.remove element
+            newDrink2.remove();
+        
+        });
+
+    </script>
+</body>
+</html>
