@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tra cứu giá hoa quả</title>
+</head>
+<body>
+    <form>
+    <h1 >Giá hoa quả</h1>
+
+    <input id="fruit" type="text">
+    <button id="check">Xem giá</button>
+    </form>
+
+    <script>
+        let btnCheck = document.getElementById("check");
+
+        btnCheck.addEventListener('click', () =>{
+        
+        let price =  document.getElementById("fruit").value;
+
+        switch(price){
+            case 'Ổi':
+            case 'Dưa hấu':
+               alert('20000VND');
+                break;
+
+            case 'Táo':
+            case 'Xoài':
+                alert('30000VND');
+                break;
+
+            case 'Cam':
+            case 'Chôm Chôm':
+                alert('40000VND');
+                break;
+
+            case 'Măng Cụt':
+                alert('50000VND');
+                break;
+            
+        }
+        });
+
+    </script>
+
+    
+</body>
+</html>

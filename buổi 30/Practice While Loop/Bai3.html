@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 3</title>
+</head>
+<body>
+    <h2>Bài 3</h2>
+    <p>Viết chương trình nhập vào chiều cao tam giác vuông và in ra tam giác có hình dạng như sau: <br>
+        ***** <br>
+        **** <br>
+        *** <br>
+        ** <br>
+        * <br>
+    </p>
+
+    <form action="">
+        <label for="">Nhập chiều cao tam giác: </label>
+        <input id="number" type="number">
+        <button id="btn-action" type="button">Submit</button>
+    </form>
+    <script>
+        let btnAction = document.getElementById("btn-action");
+        btnAction.addEventListener("click", () => {
+            let height = parseInt(document.getElementById("number").value);
+            let hinh = '';
+        for(let i = 1; i <= height; i++){
+            for(let j = 1; j <= i; j++){
+                hinh += "*";
+                console.log(hinh);
+            }
+            // hinh += "</br>";
+        }
+        // hinh += "</br>";
+
+       
+        // for(let i = 10; i >= 1; i--){
+        //     for(var j = i; j >= 1; j--){
+        //         hinh += "*";
+        //     }
+        //     hinh += "</br>";
+        // }
+        // hinh += "</br>";
+        // for (var i = 1; i <= 10; i++){
+        //     for(var k = i; k <= 10; k++){
+        //         hinh += "&nbsp;&nbsp;";
+        //     }
+        //     for(var j = 1; j <= i; j++){
+        //         hinh += "*";
+        //     }
+        //     hinh += "</br>";
+        // }
+        // hinh += "</br>";
+        // for(var i = 10; i >= 1; i--){
+        //     for( var k = i; k <= 10; k++){
+        //         hinh += "&nbsp;&nbsp;";
+        //     }
+        //     for(var j =i; j >= 1; j--){
+        //         hinh += "*";
+        //     }
+        //     hinh += "</br>";
+        // }
+        // document.getElementById('hinhve').innerHTML = hinh;
+
+        });
+
+    </script>
+</body>
+</html>
