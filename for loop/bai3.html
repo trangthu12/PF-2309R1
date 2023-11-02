@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Bài 3</h2>
+    <p>Viết chương trình nhập vào số hạng đầu tiên và công sai của cấp số cộng. <br>
+        In ra 10 số đầu tiên của cấp số cộng đó. <br>
+        Ví dụ: số hạng đầu tiên = 3, công sai = 5 <br>
+        Output: 3 8 13 18 23 28 33 38 43 48.</p>
+
+    <form action="">
+        <label for="">Nhập số hạng đầu tiên: </label>
+        <input id="number-3" type="number"> <br>
+        
+        <label for="">Nhập công sai của cấp số cộng: </label>
+        <input id="number-4" type="number">
+        <button id="btn-action3" type="button">Submit</button>
+    </form>
+    <script>
+        let btnAction3 = document.getElementById("btn-action3");
+        btnAction3.addEventListener("click", () => {
+            let n = parseInt(document.getElementById("number-3").value);
+            let congSai = parseInt(document.getElementById("number-4").value);
+           let count = 0;
+            for(let i = n; i < 100;  i++){
+               
+                // i = n + congSai;
+                i += congSai;
+
+                console.log(i);
+                count++;
+
+                if(count == 10){
+                   break; 
+                }
+               
+
+
+               
+            }
+
+            
+        });
+    </script>
+
+</body>
+</html>
