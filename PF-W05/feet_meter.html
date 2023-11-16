@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feet - Meter</title>
+</head>
+<body>
+    Feet: <input id="feet" type="number"><br>
+    Meter: <input id="meter" type="number"> <br>
+    <button type="button" id="btn-action-1">Feet to Meter</button>
+    <button type="button" id="btn-action-2">Meter to Feet</button>
+
+    <script>
+        let foot = document.getElementById("feet");
+        let meter = document.getElementById("meter");
+
+        let btnAction1 = document.getElementById("btn-action-1");
+        let btnAction2 = document.getElementById("btn-action-2");
+
+        btnAction1.addEventListener("click", () =>{
+            function footToMeter(foot){
+                 meter = 0.305 * foot;
+            }
+            footToMeter();
+            console.log(meter);
+        });
+        btnAction2.addEventListener("click", () =>{
+            function meterToFoot(meter){
+                foot = 3.279* meter;
+            }
+            meterToFoot();
+            console.log(foot);
+        });
+
+    </script>
+
+</body>
+</html>
